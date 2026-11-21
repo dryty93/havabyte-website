@@ -1,27 +1,31 @@
-# Havabyte Labs LLC — company website
+# Havabyte Labs LLC — corporate website
 
-A zero-build, responsive, plain HTML/CSS website suitable for a company domain.
+Official company website: https://havabytelabs.com/
 
-## Before making it public
+A static, responsive website using the existing Havabyte theme and wordmark.
 
-1. Confirm that **Havabyte Labs LLC** is the precise legal name on the approved formation documents; if it isn't, update it in the HTML files.
-2. Register a company domain, ideally a `.com` including Havabyte.
-3. Create and **test** an email address associated with that domain; then edit `BUSINESS_EMAIL` at the top of `site.js` (currently blank). Do not publish with the email blank.
-4. Review all product descriptions and the privacy notice for accuracy before launch.
-5. Put these files in the root of a new public GitHub repository and enable GitHub Pages at Settings → Pages → Deploy from a branch → main / root.
-6. Go to Settings → Pages → Custom domain and add your purchased domain. Follow GitHub's current DNS instructions for the specific domain/subdomain and enable HTTPS.
-7. Test all links and your published contact email in an incognito/private browser window.
+## Deploy from Cloudflare Pages (GitHub)
 
-## Updating the site (no technical build required)
+1. In Cloudflare dashboard, open **Workers & Pages → Create → Pages → Connect to Git**.
+2. Select GitHub repository `dryty93/havabyte-website`, production branch `main`.
+3. Framework preset: **None**; build command: leave blank; build output directory: `/` (repository root).
+4. Attach the custom domain `havabytelabs.com` under the Pages project's **Custom domains**.
+5. If `havabytelabs.com` is already attached to another Pages project, move the domain only after verifying this deployment; avoid conflicting DNS records. Configure `www` redirect separately if desired.
+6. Verify https://havabytelabs.com/, /products/, /about/, /contact/, /privacy/.
+7. Verify legacy `/products.html`, `/about.html`, `/contact.html`, `/privacy.html` redirect to their extensionless counterparts. Verify HTTPS.
 
-- Edit the text between HTML tags on `index.html` for the home page.
-- Edit `products.html`, `about.html`, `contact.html`, or `privacy.html` for other pages.
-- Edit CSS theme colors in the first line of `styles.css`.
-- Edit `site.js` to change the business contact email.
-- In GitHub, open the file, click the pencil icon, edit it, and commit. GitHub Pages republishes automatically.
+Cloudflare Pages serves folders containing `index.html` as clean URLs; `_redirects` handles old links. This is a static project and needs no Node/npm build.
 
-## Important
+## Legal and brand verification
 
-The company website's privacy notice is **not** an app privacy policy. Apps such as Ditto and AudioLingo will need independently accurate policies, support details, and store information before App Store submission.
+- Confirm the public legal company name matches registered LLC paperwork.
+- Current mark is a CSS **H** monogram with an existing SVG favicon, not an independently verified official supplied logo. Replace both when exact approved artwork is available.
+- Configure and test the actual domain email mailbox, then update `BUSINESS_EMAIL` in `site.js`. No email address is invented.
+- The company website privacy page does not replace privacy disclosures required for individual apps.
 
-Avoid adding personal home address, private contact information, or unconfirmed phone numbers to a public website. Apple/D&B may separately require legal company address and phone for enrollment.
+## Contents
+
+- `index.html`: home
+- `products/index.html`, `about/index.html`, `contact/index.html`, `privacy/index.html`: clean paths
+- `styles.css`, `site.js`, `favicon.svg`: shared assets
+- `_redirects`, `_headers`, `robots.txt`, `sitemap.xml`: Cloudflare Pages support files
