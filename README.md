@@ -29,3 +29,11 @@ Cloudflare Pages serves folders containing `index.html` as clean URLs; `_redirec
 - `products/index.html`, `about/index.html`, `contact/index.html`, `privacy/index.html`: clean paths
 - `styles.css`, `site.js`, `favicon.svg`: shared assets
 - `_redirects`, `_headers`, `robots.txt`, `sitemap.xml`: Cloudflare Pages support files
+
+## Portfolio brand assets
+
+- AudioLingo card: `assets/audiolingo-app-icon.svg` copied from the canonical AudioLingo web icon (source: `dryty93/audiolingo/web/src/app/icon.svg`).
+- Ditto card: `assets/ditto-card-wordmark.svg` is an interim brand-themed **wordmark**, not the official icon. Canonical mobile icon lives in the private `dryty93/Ditto/apps/mobile/assets/icon.png`. Use that exact exported icon when binary access is available.
+- UsGrade card: `assets/usgrade-card-wordmark.svg` is an interim brand-themed **wordmark**. No verified official asset was located in the currently accessible repository files.
+
+All public website assets are checked into this repository, so site visitors do not need access to private repositories. The portfolio remains a company description and does not imply the apps are published.
