@@ -37,3 +37,5 @@ Cloudflare Pages serves folders containing `index.html` as clean URLs; `_redirec
 - UsGrade card: `assets/usgrade-card-wordmark.svg` is an interim brand-themed **wordmark**. No verified official asset was located in the currently accessible repository files.
 
 All public website assets are checked into this repository, so site visitors do not need access to private repositories. The portfolio remains a company description and does not imply the apps are published.
+
+<!-- Cloudflare Pages deployment sync trigger: 2026-11-21. No website content changed. -->
