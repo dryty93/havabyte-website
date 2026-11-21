@@ -2,3 +2,13 @@
 
 /* Havabyte Labs wordmark treatment — matches the black-backed multicolor brand. */
 .brand-logo{display:block;width:166px;height:92px;object-fit:contain;object-position:left center}.brand{padding:0;min-width:166px}.site-header .nav{min-height:92px}.button:hover{background:#775fff;color:#fff}.button.secondary:hover{background:#21143d}.card:nth-child(2) .glyph{color:#ff6c9f}.card:nth-child(3) .glyph{color:#c8ff58}.site-footer{background:#050507}@media(max-width:760px){.brand-logo{height:76px;width:135px}.brand{min-width:135px}.site-header .nav{min-height:76px}}
+
+/* Portfolio application branding. Use local assets to avoid private-repository URLs. */
+.product-art{height:164px;display:flex;align-items:center;justify-content:center;margin:-6px 0 24px;border-radius:15px;overflow:hidden;background:#12101b;border:1px solid #2b2442}
+.product-art img{display:block;object-fit:contain;max-width:100%;max-height:100%}
+.product-art--ditto{background:#1a1020}
+.product-art--ditto img,.product-art--usgrade img{width:100%;height:100%;object-fit:cover}
+.product-art--audiolingo{background:radial-gradient(circle at 50% 35%,#273c62 0,#101927 54%,#090d17 100%)}
+.product-art--audiolingo img{width:112px;height:112px;border-radius:22px}
+.product-art--usgrade{background:#101711}
+@media(max-width:760px){.product-art{height:158px}.product-art--audiolingo img{width:102px;height:102px}}
