@@ -19,8 +19,8 @@ Cloudflare Pages serves folders containing `index.html` as clean URLs; `_redirec
 ## Legal and brand verification
 
 - Confirm the public legal company name matches registered LLC paperwork.
-- Current mark is a CSS **H** monogram with an existing SVG favicon, not an independently verified official supplied logo. Replace both when exact approved artwork is available.
-- Configure and test the actual domain email mailbox, then update `BUSINESS_EMAIL` in `site.js`. No email address is invented.
+- Header logo and favicon use vector approximations of the supplied HavaByte Labs brand art. The source PNG is the authoritative logo; replace vector approximations with the exact raster asset once available in GitHub.
+- Public contact email is `contact@havabytelabs.com`. Verify Cloudflare Email Routing is activated and delivery succeeds. Do not publish any additional mailbox names.
 - The company website privacy page does not replace privacy disclosures required for individual apps.
 
 ## Contents
