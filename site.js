@@ -1,5 +1,5 @@
 /* EDIT THIS VALUE AFTER YOU CREATE THE BUSINESS EMAIL. Changes require no build step. */
-const BUSINESS_EMAIL = ""; // Example: "hello@your-owned-domain.com"
+const BUSINESS_EMAIL = "contact@havabytelabs.com";
 for(const item of document.querySelectorAll('#year')) item.textContent = new Date().getFullYear();
 const link=document.querySelector('#contact-link');
 const label=document.querySelector('#contact-email');
