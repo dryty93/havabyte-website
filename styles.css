@@ -26,3 +26,10 @@
 .portfolio-grid .product-art--audiolingo img{width:178px;height:178px;max-width:calc(100% - 24px);max-height:calc(100% - 24px);object-fit:contain;border-radius:34px}
 .portfolio-grid .product-art--ditto img{width:100%;height:100%;object-fit:contain}
 @media(max-width:760px){.portfolio-grid .product-art{height:174px}.portfolio-grid .product-art--audiolingo img{width:146px;height:146px;border-radius:28px}}
+
+/* Final unified artwork layout: both apps use the exact same 440x220 logo canvas. */
+.portfolio-grid .product-art{height:auto;aspect-ratio:2 / 1;display:block;overflow:hidden;padding:0;border-radius:16px;margin:-6px 0 24px}
+.portfolio-grid .product-art--ditto,.portfolio-grid .product-art--audiolingo{background:#15111f}
+.portfolio-grid .product-art--ditto img,.portfolio-grid .product-art--audiolingo img{display:block;width:100%;height:100%;max-width:none;max-height:none;object-fit:cover;object-position:center;border-radius:0}
+.portfolio-grid>.card{height:100%}
+@media(max-width:760px){.portfolio-grid .product-art{height:auto;aspect-ratio:2 / 1}.portfolio-grid .product-art--audiolingo img{width:100%;height:100%;border-radius:0}}
