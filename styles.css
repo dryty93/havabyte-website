@@ -20,3 +20,9 @@
 .portfolio-grid>.card>p{margin-bottom:24px}
 .portfolio-grid .product-art{height:190px;flex-shrink:0}
 @media(max-width:760px){.portfolio-grid{grid-template-columns:1fr}.portfolio-grid .product-art{height:164px}}
+
+/* Consistent visual scale for the two portfolio cards. */
+.portfolio-grid .product-art{height:210px;margin-bottom:24px}
+.portfolio-grid .product-art--audiolingo img{width:178px;height:178px;max-width:calc(100% - 24px);max-height:calc(100% - 24px);object-fit:contain;border-radius:34px}
+.portfolio-grid .product-art--ditto img{width:100%;height:100%;object-fit:contain}
+@media(max-width:760px){.portfolio-grid .product-art{height:174px}.portfolio-grid .product-art--audiolingo img{width:146px;height:146px;border-radius:28px}}
